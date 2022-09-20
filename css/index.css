@@ -1,0 +1,235 @@
+:root {
+  --main-text-color: #f07167;
+  --secondary-text-color: #ffffff;
+  --main-background-color: #fdfcdc;
+  --secondary-background-color: #fed9b7;
+  --accent-color: #f07167;
+  --main-background-color: #f5f4fa;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.table {
+  margin-top: 30px;
+}
+
+.table-top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.columns {
+  display: flex;
+  gap: 170px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  display: grid;
+  grid-template-columns: 270px 250px 260px 240px 170px;
+  margin-bottom: 15px;
+  padding: 15px;
+  align-items: center;
+}
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.icon-wrapper {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.notes-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.notes-list-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.notes-list-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.date,
+.category,
+.content {
+  font-size: 15px;
+}
+
+.button,
+.modal-button {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+  border: 2px solid var(--secondary-background-color);
+  transition: all 0.2s;
+
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button {
+  margin-left: 1060px;
+}
+
+.button:hover,
+.button:focus,
+.modal-button:hover,
+.modal-button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.table-two-top {
+  font-weight: 700;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 500px 350px 350px;
+}
+
+.table-two-list-item {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  display: grid;
+  margin-bottom: 15px;
+  padding: 15px;
+  align-items: center;
+  grid-template-columns: 500px 350px 350px;
+}
+
+.note-category-name {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-input {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  width: 170px;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 5px;
+  background: #fff;
+  color: var(--main-text-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.dropdown input::placeholder {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--main-text-color);
+}
+
+.dropdown-item {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.title-textarea,
+.content-textarea {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  height: 50px;
+  max-width: 160px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 5px;
+  background: #fff;
+  color: var(--main-text-color);
+  text-transform: capitalize;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.category-title {
+  font-size: 15px;
+}

@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My notes</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-     <link rel="stylesheet" href="https://cdnjs.com/libraries/modern-normalize">
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <header>
-    <div class="container">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
         <div class="table">
-            <div class="table-top">
-                <div class="name">Name</div>
-                <ul class="columns">
-                    <li>Created</li>
-                    <li>Category</li>
-                    <li>Content</li>
-                    <li>Dates</li>
-                </ul>
-                <ul class="icons">
-                    <li class="icon">
-                        <img src="" alt="">
-                    </li>
-                    <li class="icon">
-                        <img src="" alt="">
-                    </li>
-                   
-                    
-                </ul>
-
-            </div>
+          <div class="table-top">
+            <div class="name">Name</div>
+            <ul class="columns">
+              <li>Created</li>
+              <li>Category</li>
+              <li>Content</li>
+            </ul>
+            <ul class="icons">
+              <li class="icon">
+                <img src="./images/archieve-icon.png" alt="archieve" />
+              </li>
+              <li class="icon">
+                <img src="./images/bin.png" alt="bin" />
+              </li>
+            </ul>
+          </div>
+          <div class="table-content">
+            <ul class="notes js-notes-list"></ul>
+          </div>
         </div>
-    </div>
-  </header>
 
+        <button class="button js-create" type="button" data-action="open-modal">
+          Create Note
+        </button>
 
+        <div class="table-two">
+          <div class="table-two-top">
+            <div class="note-category">Note Category</div>
+            <div class="active">Active</div>
+            <div class="archiwed">Archived</div>
+          </div>
 
+          <ul class="table-two-list"></ul>
+        </div>
+      </div>
+    </header>
 
-
-    <script src="./index.js"></script>
-</body>
+    <script src="./js/index.js" type="module"></script>
+  </body>
 </html>
