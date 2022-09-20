@@ -9,7 +9,7 @@ function createNote(title, noteDate, categoryName, content) {
   noteEl.classList.add("note");
   noteEl.innerHTML = `<div id="list-${categoryName}" class="name-wrapper">
       <div class="icon-wrapper">
-        <img id="${categoryName}-icon" class="notes-icon" alt="icon" src="./../images/tick.png"/>
+        <img id="${categoryName}-icon" class="notes-icon" alt="icon" src="./images/tick.png"/>
       </div>
       <div id="note-title">${title}</div>
       <textarea id="note-title-input" class="hidden title-textarea">
@@ -31,18 +31,18 @@ ${title}</textarea
       <img
         id="edit"
         class="notes-list-icon js-edit"
-        src="./../images/pen.png"
+        src="./images/pen.png"
         alt="pen"
       />
       <img
         id="archive"
         class="notes-list-icon archive"
-        src="./../images/archieve-icon-two.png"
+        src="./images/archieve-icon-two.png"
         alt="archive"
       />
       <img
         class="notes-list-icon js-remove"
-        src="./../images/bin-two.png"
+        src="./images/bin-two.png"
         alt="bin"
       />
     </div>`;
@@ -61,13 +61,13 @@ ${title}</textarea
     let iconEl = noteEl.querySelector(".notes-icon");
 
     if (categoryEl.innerText === "Quote") {
-      iconEl.setAttribute("src", "./../images/quotes.png");
+      iconEl.setAttribute("src", "./images/quotes.png");
     } else if (categoryEl.innerText === "Task") {
-      iconEl.setAttribute("src", "./../images/shopping.png");
+      iconEl.setAttribute("src", "./images/shopping.png");
     } else if (categoryEl.innerText === "Random Thought") {
-      iconEl.setAttribute("src", "./../images/head.png");
+      iconEl.setAttribute("src", "./images/head.png");
     } else if (categoryEl.innerText === "Idea") {
-      iconEl.setAttribute("src", "./../images/idea.png");
+      iconEl.setAttribute("src", "./images/idea.png");
     }
 
     return;

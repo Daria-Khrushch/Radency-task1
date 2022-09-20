@@ -49,13 +49,13 @@ const handleEdit = (e) => {
     let iconEl = itemToEdit.querySelector(".notes-icon");
 
     if (categoryEl.innerText === "Quote") {
-      iconEl.setAttribute("src", "./../images/quotes.png");
+      iconEl.setAttribute("src", "./images/quotes.png");
     } else if (categoryEl.innerText === "Task") {
-      iconEl.setAttribute("src", "./../images/shopping.png");
+      iconEl.setAttribute("src", "./images/shopping.png");
     } else if (categoryEl.innerText === "Random Thought") {
-      iconEl.setAttribute("src", "./../images/head.png");
+      iconEl.setAttribute("src", "./images/head.png");
     } else if (categoryEl.innerText === "Idea") {
-      iconEl.setAttribute("src", "./../images/idea.png");
+      iconEl.setAttribute("src", "./images/idea.png");
     }
 
     return;
@@ -111,21 +111,21 @@ const makeNoteMarkup = ({ type, name, date, category, content }) => {
                   <img
                   id="edit"
                     class="notes-list-icon js-edit"
-                    src="./../images/pen.png"
+                    src="./images/pen.png"
                     alt="pen"
                     name="${name}"
                   />
                   <img
                   id="archive"
                     class="notes-list-icon archive"
-                    src="./../images/archieve-icon-two.png"
+                    src="./images/archieve-icon-two.png"
                     alt="archive"
                     name="${name}"
                   />
                   <img
                   id="remove js-remove"
                     class="notes-list-icon js-remove"
-                    src="./../images/bin-two.png"
+                    src="./images/bin-two.png"
                     alt="bin"
                     name="${name}"
                     
